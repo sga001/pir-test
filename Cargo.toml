@@ -1,0 +1,29 @@
+[package]
+name = "pir-test"
+version = "0.1.0"
+authors = ["Sebastian Angel <sebs@cs.utexas.edu>"]
+
+[dependencies]
+xpir = { path = "../xpir-rust/" }
+sealpir = { path = "../sealpir-rust/" }
+tarpc = "0.11.0"
+tarpc-plugins = "0.3.0"
+serde = "1.0.65"
+serde_derive = "1.0.65"
+serde_json = "1.0.19"
+rand = "0.5.0"
+tokio-core = "0.1.17"
+futures = "0.1.21"
+futures-cpupool = "0.1.8"
+time = "0.1.40"
+getopts = "0.2.17"
+chrono = { version = "0.4.2", features = ["serde"] }
+
+[profile.release]
+opt-level = 3
+debug = false
+rpath = false
+lto = true
+debug-assertions = true
+codegen-units = 1
+panic = 'unwind'
