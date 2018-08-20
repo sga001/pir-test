@@ -4,8 +4,8 @@ version = "0.1.0"
 authors = ["Sebastian Angel <sebs@cs.utexas.edu>"]
 
 [dependencies]
-#xpir = { path = "../xpir-rust/" }
-xpir = {git = "https://github.com/sga001/xpir-rust.git"}
+xpir = { path = "../xpir-rust/" }
+#xpir = {git = "https://github.com/sga001/xpir-rust.git"} #this sould work too
 sealpir = { path = "../sealpir-rust/" }
 tarpc = "0.12.1"
 tarpc-plugins = "0.4.0"
