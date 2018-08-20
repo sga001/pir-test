@@ -4,10 +4,11 @@ version = "0.1.0"
 authors = ["Sebastian Angel <sebs@cs.utexas.edu>"]
 
 [dependencies]
-xpir = { path = "../xpir-rust/" }
+#xpir = { path = "../xpir-rust/" }
+xpir = {git = "https://github.com/sga001/xpir-rust.git"}
 sealpir = { path = "../sealpir-rust/" }
-tarpc = "0.11.0"
-tarpc-plugins = "0.3.0"
+tarpc = "0.12.1"
+tarpc-plugins = "0.4.0"
 serde = "1.0.65"
 serde_derive = "1.0.65"
 serde_json = "1.0.19"
